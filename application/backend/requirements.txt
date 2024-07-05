@@ -12,3 +12,4 @@ PyGithub
 google-generativeai
 Pillow
 inflect
+pytest
