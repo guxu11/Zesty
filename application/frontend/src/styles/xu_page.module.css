@@ -1,0 +1,26 @@
+.Typewriter__wrapper {
+    font-size: 2.2em !important;
+    font-family: Poppins;
+    color: #ffa500 !important;
+    font-weight: 600 !important;
+  }
+  .Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: #ff7f50 !important;
+  }
+  
+  @media (max-width: 767px) {
+    .Typewriter__wrapper {
+      font-size: 1.4em !important;
+      font-weight: 500 !important;
+      position: absolute !important;
+    }
+    .Typewriter__cursor {
+      display: none !important;
+    }
+  }
+
+  .p_xu {
+    /* color: var(--imp-text-color) !important; */
+    font-family: monospace;
+}

@@ -1,0 +1,22 @@
+/* Home.css */
+.home-header {
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50; 
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    margin-bottom: 40px; 
+  }
+  
+  /* EmptyPantryMessage.css */
+.empty-pantry-message {
+  color: #ff6347; /* Tomato color */
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  background-color: #fff5f5; /* Light pink background */
+  margin: 20px auto;
+  max-width: 600px;
+}

@@ -1,0 +1,49 @@
+.w-45 {
+    width: 45% !important;
+  }
+  
+  .w-20 {
+    width: 20% !important;
+  }
+
+/* NavigationBar.css */
+.navbar {
+  background-color: #ffffff !important; /* 浅橙色背景 */
+  height: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #5a5a5a; /* 深灰色文字 */
+}
+
+.navbar-light .navbar-brand {
+  color: #ff7f50;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #5a5a5a;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(90, 90, 90, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link:hover {
+  color: #151210; /* 悬停时的颜色，深橙色 */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #151210 !important;
+}
+
+.navbar-light .nav-dropdown:hover {
+  background-color: #ffd5c2; /* 下拉菜单悬停背景颜色 */
+}
+
+.navbar-light .nav-dropdown-item:hover {
+  color: #333333; /* 下拉菜单项悬停文字颜色 */
+}

@@ -1,0 +1,172 @@
+/* RecipeReview.css */
+.commentContainer {
+  /* 容器和上面有间隔 */
+  margin-top: 50px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.headerStyle {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.commentStyle {
+  margin-bottom: 20px;
+}
+
+.userNameStyle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.ratingStyle {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.commentTextStyle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.dividerStyle {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, #f0f0f0, #bbb, #f0f0f0);
+}
+
+.star {
+  color: #ccc; /* 空星的默认颜色 */
+  font-size: 1.2rem; /* 星星的大小 */
+  margin: 0 2px; /* 星星之间的间隔 */
+}
+
+.filled {
+  color: #ffa500; /* 橙色填充星星 */
+}
+
+/* 添加到 RecipeReview.css */
+.star-hover:hover {
+  color: #ffd700; /* 当鼠标悬停时星星的颜色 */
+  cursor: pointer;
+}
+
+.submit-btn {
+  float: right; /* 将按钮移动到右侧 */
+  margin-top: 15px;
+  background-color: #ff7f50 !important; /* 按钮背景为橙色 */
+  color: #ffffff !important; /* 文字颜色为白色 */
+  border: none !important; /* 移除按钮的边框 */
+}
+
+.submit-btn:hover {
+  background-color: #e67e22 !important; /* 悬停时背景颜色变深 */
+  color: #ffffff !important; /* 文字颜色保持不变 */
+}
+
+.step-image {
+  width: 100%; /* 或者任何适合你布局的宽度 */
+  max-width: 500px; /* 限制图片最大宽度 */
+  height: auto; /* 保持图片的纵横比 */
+  margin-bottom: 15px; /* 在图片和文本之间添加一些空间 */
+  margin-top: 15px; /* 在图片和文本之间添加一些空间 */
+}
+
+.ingredient-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ingredient-list li {
+  padding: 8px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Left-align ingredient and right-align "Missing" */
+}
+
+.ingredient-list li .ingredient-info {
+  flex-grow: 1; /* Make the ingredient name expand to the full width */
+}
+
+.ingredient-list li .missing-label {
+  color: #d9534f; /* Red color for "Missing" label */
+  font-weight: bold;
+  flex-shrink: 0; /* Prevents the label from shrinking */
+}
+
+
+
+.cooking-time {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+  padding: 10px;
+  border-left: 5px solid #ff7f50; /* 左侧橙色边框 */
+  transition: transform 0.3s ease-in-out; /* 平滑的变换动画 */
+}
+
+.cooking-time:hover {
+  transform: translateX(10px); /* 鼠标悬停时移动文本 */
+}
+
+.step-list {
+  counter-reset: step-counter;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.step-list li {
+  counter-increment: step-counter;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 35px;
+  font-size: 18px;
+}
+
+.step-list li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ff7f50;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.step-title, .ingredient-title, .time-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff7f50;
+}
+
+.recipe-description {
+  font-family: 'Georgia', serif; /* 使用更具艺术感的字体 */
+  color: #4a4a4a; /* 深灰色字体 */
+  text-align: justify; /* 两端对齐文本 */
+  line-height: 1.8; /* 增加行间距 */
+  background-color: #f9f9f9; /* 轻微的背景色 */
+  padding: 15px; /* 内边距 */
+  border-left: 5px solid #ff7f50; /* 左侧边框 */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 轻微的阴影 */
+  transition: transform 0.3s ease-in-out; /* 平滑的变换动画 */
+}
+
+.recipe-description:hover {
+  transform: translateX(10px); /* 鼠标悬停时移动文本 */
+}

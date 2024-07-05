@@ -1,0 +1,14 @@
+python-dotenv
+flask-cors
+SQLAlchemy
+Flask-SQLAlchemy
+psycopg2-binary
+Flask
+PyMySQL
+nltk
+fuzzywuzzy
+python-Levenshtein
+PyGithub
+google-generativeai
+Pillow
+inflect

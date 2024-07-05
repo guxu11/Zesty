@@ -1,0 +1,180 @@
+.create-recipe-page {
+  display: flex;
+  justify-content: center;
+  /* Align items horizontally at the center */
+  flex-direction: column;
+  /* Lay out items vertically */
+}
+
+.create-recipe-form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.create-recipe-form {
+  margin: 20px;
+}
+
+#recipeTitle {
+  width: 100%;
+  height: 100%;
+}
+
+#recipeDesc {
+  width: 100%;
+  height: 100%;
+}
+
+#recipeImg {
+  width: 100%;
+  height: 100%;
+}
+
+.create-recipe-element {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.input-box {
+  flex: 1; /* Allow input boxes to expand */
+  margin-right: 10px; /* Add margin between input boxes */
+}
+
+.bi-trash-button {
+  background-color: lightgray; /* Red background color */
+  color: white; /* White text color */
+  border: none; /* Remove border */
+  padding: 8px 16px; /* Add padding */
+  border-radius: 4px; /* Add border radius */
+  cursor: pointer; /* Add pointer cursor */
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Example of a labeled input */
+.input-container {
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-ingredient-button,
+#add-instruction-button,
+#generateRecipeButton,
+#create-submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: #fff; /* Initial background color */
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.add-step-img-button {
+  padding: 4px 8px; /* Adjust padding to make it smaller */
+  font-size: 10px; /* Adjust font size if needed */
+  /* font-weight: bold; */
+  color: black;
+  background-color: #fff; /* Initial background color */
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Ensure button is displayed inline */
+  margin: 8px 0;
+}
+
+#add-ingredient-button:hover,
+#add-instruction-button:hover,
+#generateRecipeButton:hover,
+#create-submit-button:hover {
+  background-color: #ffa500; /* Background color when hovered */
+  color: white;
+}
+
+.add-step-img-button:hover {
+  background-color: #ffa500; /* Background color when hovered */
+  color: white;
+}
+
+.step-img-container {
+  width: 100%;
+}
+.difficulty-select {
+  width: 100%; /* Make the select element fill its container */
+  padding: 8px; /* Add some padding for better readability */
+  font-size: 16px; /* Adjust font size */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 4px; /* Add some border radius for a softer look */
+  outline: none; /* Remove default outline */
+  background-color: #fff; /* Set background color */
+}
+
+/* Style the select arrow */
+.difficulty-select::-ms-expand {
+  display: none; /* Hide the default arrow on IE/Edge */
+}
+
+.difficulty-select:focus {
+  border-color: #ffa500; /* Change border color on focus */
+}
+
+.ingredient-box {
+  width: 80%;
+  height: auto;
+  overflow-y: auto;
+}
+
+.step {
+  display: flex;
+  direction: row;
+  width: 100%;
+  margin: 0;
+}
+
+.instruction-box {
+  flex: 1;
+}
+
+.step-label {
+  width: 100%;
+  margin: 0;
+  font-weight: normal; /* Set font weight to normal */
+  font-size: smaller;
+}
+
+#submit-button-container {
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .create-recipe-form-container {
+    width: 100%; /* Set width to 100% for smaller screens */
+    border: none; /* Remove border to avoid overflow issues */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}

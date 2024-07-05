@@ -1,0 +1,98 @@
+.card-body-custom {
+  flex: 1; /* This will make the card body fill the available space */
+  min-height: 150px;
+}
+
+
+.card-custom {
+  height: 100%; /* Set the height of the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card-img-wrapper {
+  height: 200px; /* Set the height of the image wrapper */
+}
+
+
+.card-custom:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-custom {
+  height: 200px; 
+  object-fit: cover; 
+  width: 100%; 
+}
+
+.card-body-custom {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title-custom {
+  font-weight: bold;
+  color: #000; 
+  font-size: 1.2rem;
+}
+
+.card-category-custom {
+  color: #6c757d; 
+  text-transform: uppercase; 
+  font-size: 0.9rem; 
+}
+
+.card-title-custom, .card-category-custom {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制在两行文本 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-rating-custom {
+  margin-top: auto;
+}
+
+.star-rating {
+  font-size: 1rem;
+  color: #ffc107; 
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.mask-text {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-img-wrapper:hover .card-img-mask {
+  opacity: 0.8; /* 调整悬停时的透明度 */
+}
+
+.mask-content {
+  text-align: center;
+}
+
+.mask-description {
+  color: white;
+  font-size: 1rem;
+  margin-top: 10px; /* 添加一点间距在数字和描述文字之间 */
+}

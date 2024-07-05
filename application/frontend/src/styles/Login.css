@@ -1,0 +1,78 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ab5858; /* Fallback color if the image is not available */
+    background-image: url('../assets/food-bg.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for the form background */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .login-form .form-control {
+    border-radius: 5px;
+  }
+  
+  .login-form .btn-primary {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  
+  .alert-danger {
+    font-size: 14px;
+  }
+  
+  /* Extra styles to make it visually appealing */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  .password-wrapper {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    border: none;
+    background: transparent;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* Styles to prevent the toggle from being focused with a border */
+  .password-toggle:focus {
+    outline: none;
+  }
+  
+  /* Hide the browser's default clear icon in Edge & IE */
+  input[type="password"]::-ms-clear,
+  input[type="text"]::-ms-clear {
+    display: none;
+  }
+  
+  /* Hide the browser's default clear icon in Chrome & Safari */
+  input[type="password"]::-webkit-search-decoration,
+  input[type="text"]::-webkit-search-decoration,
+  input[type="password"]::-webkit-search-cancel-button,
+  input[type="text"]::-webkit-search-cancel-button,
+  input[type="password"]::-webkit-search-results-button,
+  input[type="text"]::-webkit-search-results-button,
+  input[type="password"]::-webkit-search-results-decoration,
+  input[type="text"]::-webkit-search-results-decoration {
+    display: none;
+  }
