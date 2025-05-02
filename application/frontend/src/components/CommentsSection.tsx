@@ -3,6 +3,9 @@ import { Card } from "react-bootstrap";
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs";
 import '../styles/CommentsSection.css'; // Make sure to import the CSS for styling
 
+const BsStarHalfIcon = BsStarHalf as React.ElementType;
+const BsStarIcon = BsStar as React.ElementType;
+const BsStarFillIcon = BsStarFill as React.ElementType;
 
 interface Review {
     reviewId: number | undefined;
@@ -22,18 +25,18 @@ interface Review {
       // Create full stars
       const fullStars = Math.floor(rating);
       // Check if there is a half star
-      const halfStar = rating % 1 >= 0.5 ? <BsStarHalf key="half-star" /> : null;
+      const halfStar = rating % 1 >= 0.5 ? <BsStarHalfIcon key="half-star" /> : null;
       // Create empty stars
       const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
   
       return (
         <>
           {[...Array(fullStars)].map((_, index) => (
-            <BsStarFill key={`full-${index}`} />
+            <BsStarFillIcon key={`full-${index}`} />
           ))}
           {halfStar}
           {[...Array(emptyStars)].map((_, index) => (
-            <BsStar key={`empty-${index}`} />
+            <BsStarIcon key={`empty-${index}`} />
           ))}
         </>
       );
