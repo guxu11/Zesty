@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect, ChangeEvent, lazy } from 'react'
 import { BiTrash } from 'react-icons/bi'
 import { loadingGif } from '../../constants'
 
+const BiTrashIcon = BiTrash as React.ElementType;
+
 interface PantryListProps {
   userId: number // Assuming userId is of type string
 }
@@ -359,7 +361,7 @@ const PantryList: React.FC<PantryListProps> = ({ userId }) => {
                       className='bi-trash-button'
                       onClick={() => handleRemoveIngredient(index)}
                     >
-                      <BiTrash />
+                      <BiTrashIcon />
                     </div>
                   )}
                 </li>

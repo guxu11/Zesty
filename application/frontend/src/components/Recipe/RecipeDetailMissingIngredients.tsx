@@ -13,6 +13,12 @@ import CommentsSection from "../CommentsSection";
 import "../../styles/CommentsSection.css"; // Make sure to import the CSS for styling
 import { loadingGif } from "../../constants";
 
+
+const BsStarFillIcon = BsStarFill as React.ElementType;
+const BsStarIcon = BsStar as React.ElementType;
+const BsHeartFillIcon = BsHeartFill as React.ElementType;
+const BsHeartIcon = BsHeart as React.ElementType;
+
 interface Review {
   reviewId: number | undefined;
   userName: string;
@@ -395,9 +401,9 @@ const RecipeDetailPage: React.FC = () => {
         >
           <span style={{ fontSize: "24px" }}>
             {[...Array(Math.floor(recipeDetail.rating))].map((_, index) => (
-              <BsStarFill key={index} />
+              <BsStarFillIcon key={index} />
             ))}
-            {recipeDetail.rating % 1 !== 0 && <BsStarFill />}{" "}
+            {recipeDetail.rating % 1 !== 0 && <BsStarFillIcon />}{" "}
             {recipeDetail.rating.toFixed(1)}&nbsp;
           </span>
         </div>
@@ -468,7 +474,7 @@ const RecipeDetailPage: React.FC = () => {
             onClick={handleLikeClick}
             style={styles.likeButton}
           >
-            {liked ? <BsHeartFill size={20} /> : <BsHeart size={20} />}
+            {liked ? <BsHeartFillIcon size={20} /> : <BsHeartIcon size={20} />}
             &nbsp;Like
           </Button>
         </div>
@@ -494,7 +500,7 @@ const RecipeDetailPage: React.FC = () => {
                 onClick={() => handleStarClick(index)}
                 className="star-hover"
               >
-                {index < rating ? <BsStarFill /> : <BsStar />}
+                {index < rating ? <BsStarFillIcon /> : <BsStarIcon />}
               </span>
             ))}
             <Button variant="secondary" type="submit" className="submit-btn">

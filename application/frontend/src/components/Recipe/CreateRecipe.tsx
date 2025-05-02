@@ -12,6 +12,8 @@ import {
   generateLoadingGif,
 } from '../../constants'
 
+const BiTrashIcon = BiTrash as React.ElementType;
+
 // Define the interface for the props
 interface CreateRecipePageProps {
   // Props definition here
@@ -516,7 +518,7 @@ const CreateRecipePage: React.FC = () => {
                     className='bi-trash-button'
                     onClick={() => handleRemoveIngredient(index)}
                   >
-                    <BiTrash />
+                    <BiTrashIcon />
                   </div>
                 </div>
               ))}
@@ -558,7 +560,7 @@ const CreateRecipePage: React.FC = () => {
                       className='bi-trash-button'
                       onClick={() => handleRemoveInstruction(index)}
                     >
-                      <BiTrash />
+                      <BiTrashIcon />
                     </div>
                   </div>
 
