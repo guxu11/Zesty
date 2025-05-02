@@ -3,7 +3,9 @@
   "name": "react-app",
   "private": true,
   "version": "0.0.0",
-
+  "engine": {
+    "node": "16.20.2"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
